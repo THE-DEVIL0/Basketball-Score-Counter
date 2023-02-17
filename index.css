@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Digital Display';
+    src: url('https://praxeds.github.io/scrimba-basketball-scoreboard/Assets/Digital-Display.woff2') format('woff2'),
+        url('https://praxeds.github.io/basketball-scoreboard/Assets/Digital-Display.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*
+
+!Variables
+
+*/
+
+:root{
+    --background-color: rgb(5, 5, 5);
+    --background-color1: rgb(66, 185, 66);
+    --text-color1: rgb(86, 230, 255); 
+    --text-color2: rgb(220, 241, 26); 
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.container {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 90vw;
+    height: 90vh;
+}
+
+.text {
+    text-transform: uppercase;
+    color: var(--text-color2);
+}
+
+
+
+.scoreboard {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+    background-color: var(--background-color1);
+    border: 7px solid rgb(192, 243, 52);
+    outline: 10px solid var(--background-color1);
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.one {
+    position: relative;
+    width: 17em;
+    height: 10em;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    background-color: #09130b ;
+}
+
+.pts-shadow {
+    font-family: 'Digital Display',monospace;
+    font-size: 11em;
+    text-align: center;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+    color: rgb(22, 31, 41);
+}
+
+.pts {
+    font-family: 'Digital Display',monospace;
+    font-size: 11em;
+    text-align: end;
+
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+    margin-right: 22.2px;
+    color: var(--text-color1);
+}
+
+.two {
+     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+     flex: 1; 
+     width: 90%;
+}
+
+button {
+    cursor: pointer;
+    width: 50%;
+    height: 10vh;
+    font-size: 2rem;
+    border: 3px solid rgb(200, 238, 111);
+    border-radius: 10px;
+margin: 0px 10px 0px 10px;
+    color: var(--text-color2);
+    background-color: transparent;
+    position: relative;
+    bottom: 20px;
+}
+
+button:hover {
+    background-color: rgb(75, 148, 68);
+}
+#reset{
+    color: var(--text-color2);
+    background-color: transparent;
+    cursor: pointer;
+    width: 170px;
+    height: 10vh;
+    font-size: 2rem;
+    border: 3px solid rgb(200, 238, 111);
+    border-radius: 10px;
+    position: relative;
+    bottom: 12%;
+}
+#reset:hover{
+    background-color: rgb(75, 148, 68);
+}
+
