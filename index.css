@@ -296,14 +296,14 @@ top: -38px;
         height: 5vh;
     }
     #reset{
-        transform: translate(-50% , -250%);
+        transform: translate(-150% , -250%);
     }
     .pts , .pts-shadow{
         font-size: 6.5rem;
     }
     .pts{
     position: relative;
-        right: 30px;
+        right: -30px;
     }    
     .one{
         width: 140px;
