@@ -17,8 +17,8 @@
 :root{
     --background-color: rgb(5, 5, 5);
     --background-color1: rgb(66, 185, 66);
-    --text-color1: rgb(86, 230, 255); 
-    --text-color2: rgb(220, 241, 26); 
+    --text-color1: rgb(86, 230, 255);
+    --text-color2: rgb(220, 241, 26);
 }
 
 body{
@@ -26,7 +26,7 @@ body{
     box-sizing: border-box;
     background-color: var(--background-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+
 }
 
 .container {
@@ -34,12 +34,12 @@ body{
     top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+margin-top: -10px;
     width: 90vw;
     height: 90vh;
 }
@@ -48,8 +48,6 @@ body{
     text-transform: uppercase;
     color: var(--text-color2);
 }
-
-
 
 .scoreboard {
     margin-top: 10vh;
@@ -122,7 +120,7 @@ h2 {
      display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-     flex: 1; 
+     flex: 1;
      width: 90%;
 }
 
@@ -158,4 +156,113 @@ button:hover {
 #reset:hover{
     background-color: rgb(75, 148, 68);
 }
-
+#pra{
+    color: aliceblue;
+}
+#start-btn , #stop-btn , #reset{
+background-color: rgb(33, 80, 80);
+width: 190px;
+}
+#start-btn{
+position: relative;
+left: -15px;
+top: -10px
+}
+#start-btn:hover , #stop-btn:hover{
+    background-color:  rgb(75, 148, 68);
+}
+#stop-btn{
+    position: relative;
+    right: -160px;
+    top: -10px;
+    }
+    #reset{
+        position: relative;
+        left: 180px;
+        top: 30px
+        }
+ #para-div{
+    width: 170px;
+text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    left: 202px;
+top: 45px;
+background-color: rgb(66, 185, 66); ;
+border-radius: 10px;
+}
+#pra , #time-el{
+    font-size: 1.5rem;
+    position: relative;
+    top: -22px;
+    font-weight: bolder;
+}
+#time-el{
+    position: relative;
+    top: 1px;
+}
+@media  (max-width: 630px){
+.container{
+    width: 89vw;
+    height: 80vh;
+}
+.text{
+    font-size: 2.5rem;
+}
+.one{
+    width: 170px;
+    height: 120px;
+}
+#one-pt , #two-pts , #three-pts{
+    margin: 2px 2px 2px 2px;
+    font-size: 1.5rem;
+    width:10vw;
+    height: 7vh;
+}
+.pts{
+font-size: 8rem;
+position: relative;
+left: 100px;
+}
+.pts-shadow{
+    font-size: 8rem;
+}
+#start-btn , #stop-btn , #reset{
+width: 100px;
+    height:40px;
+    font-size: 1.5rem;
+}
+#start-btn{
+    position: relative;
+    left: 15px;
+}
+#stop-btn{
+    position: relative;
+    right: -100px
+}
+#reset{
+    position: relative;
+    top: 40px;
+    left: -130px;
+}
+#para-div{
+    position: relative;
+    left: 130px;
+    top: 35px;
+    width: 100px;
+    height: 40px;
+}
+ #time-el{
+font-size: 1.1rem;
+}
+#pra{
+    font-size: 1.3rem;
+}
+}
+ @media(min-width:710px){
+    #reset{
+        transform: translate(-225% , 50%);
+    }
+}
