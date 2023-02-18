@@ -141,7 +141,7 @@ margin: 0px 10px 0px 10px;
 button:hover {
     background-color: rgb(75, 148, 68);
 }
-#reset1{
+#reset1 , #reset{
     color: var(--text-color2);
     background-color: transparent;
     cursor: pointer;
@@ -154,7 +154,7 @@ button:hover {
     /* bottom: -120px; */
     top: -55px;
 }
-#reset1:hover{
+#reset1:hover , #reset:hover{
     background-color: rgb(75, 148, 68);
 }
 #pra{
