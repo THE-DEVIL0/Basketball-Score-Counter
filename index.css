@@ -289,7 +289,7 @@ top: -38px;
     height: 7vh;
 }
 }
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     #one-pt , #two-pts , #three-pts{
         font-size: 1.2rem;
         width:8vw;
