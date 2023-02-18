@@ -36,7 +36,12 @@
               </div>
            </div>
         </div>
+        <div id="div2">
+     <div id="para-div"> <p id="pra">Time: <span id="time-el">00:00</span></p></div>
+<button id="start-btn" onclick="start()">Start</button>
+<button id="stop-btn" onclick="stop()">Stop</button>
     <button id="reset" onclick="reset()">RESET</button>
+</div>
      </div>  
      <script>let homePts=document.getElementById('home-pts')
         let homeCount=0
@@ -78,7 +83,48 @@
             guestCount = 0
             homePts.innerText=homeCount
             guestPts.innerText=guestCount
-        }     
+        }    
+        let time = 0
+  let timerId
+  let isRunning = false
+  
+  let timeEl = document.getElementById("time-el")
+  let startBtn = document.getElementById("start-btn")
+  let stopBtn = document.getElementById("stop-btn")
+  let resetBtn = document.getElementById("reset-btn")
+  
+  function startTimer() {
+      time++
+      timeEl.textContent = formatTime(time)
+  }
+  function formatTime(time) {
+      let minutes = Math.floor(time / 60)
+      let seconds = time % 60
+      if (seconds < 10) {
+          return `${minutes}:0${seconds}`
+      } else {
+          return `${minutes}:${seconds}`
+      }
+  }
+  function start() {
+      if (!isRunning) {
+          timerId = setInterval(startTimer, 1000)
+          isRunning = true
+      }
+  }
+  function stop() {
+      clearInterval(timerId)
+      isRunning = false
+  }
+  function reset() {
+      clearInterval(timerId)
+      isRunning = false
+      time = 0
+      timeEl.textContent = "0:00"
+  }
+  startBtn.addEventListener("click", start)
+  stopBtn.addEventListener("click", stop)
+  resetBtn.addEventListener("click", reset) 
         </script>
 </body>
 </html>
