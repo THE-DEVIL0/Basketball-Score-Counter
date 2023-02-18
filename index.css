@@ -141,19 +141,20 @@ margin: 0px 10px 0px 10px;
 button:hover {
     background-color: rgb(75, 148, 68);
 }
-#reset{
+#reset1{
     color: var(--text-color2);
     background-color: transparent;
     cursor: pointer;
-    width: 170px;
+    width: 120px;
     height: 10vh;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 3px solid rgb(200, 238, 111);
     border-radius: 10px;
     position: relative;
-    bottom: 12%;
+    /* bottom: -120px; */
+    top: -55px;
 }
-#reset:hover{
+#reset1:hover{
     background-color: rgb(75, 148, 68);
 }
 #pra{
@@ -260,9 +261,31 @@ font-size: 1.1rem;
 #pra{
     font-size: 1.3rem;
 }
+#reset1{
+    font-size: 1.2rem;
+width: 80px;
+height: 40px;
+position: relative;
+top: -38px;
+}
 }
  @media(min-width:710px){
     #reset{
         transform: translate(-225% , 50%);
     }
+}
+@media (min-width:630px) and (max-width:800px){
+#reset1{
+    font-size: 1.2rem;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    top: -38px;
+}
+#one-pt , #two-pts , #three-pts{
+    margin: 2px 1px 2px 1px;
+    font-size: 1.3rem;
+    width:8vw;
+    height: 7vh;
+}
 }
