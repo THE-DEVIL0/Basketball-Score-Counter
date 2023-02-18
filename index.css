@@ -289,3 +289,19 @@ top: -38px;
     height: 7vh;
 }
 }
+@media (max-width: 300px) {
+    #one-pt , #two-pts , #three-pts{
+        font-size: 1.2rem;
+        width:8vw;
+        height: 6vh;
+    }
+    #reset{
+        transform: translate(-50% , -50%);
+    }
+    .pts , .pts-shadow{
+        font-size: 6.5rem;
+    }
+    .one{
+        width: 140px;
+    }
+}
