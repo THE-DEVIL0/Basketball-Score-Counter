@@ -292,7 +292,7 @@ top: -38px;
 @media (max-width: 400px) {
     #one-pt , #two-pts , #three-pts{
         font-size: 1.2rem;
-        width:10vw;
+        width:11vw;
         height: 5vh;
     }
     #reset{
