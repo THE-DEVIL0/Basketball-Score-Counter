@@ -35,7 +35,9 @@
                  <button id="three-pts" onclick="guestAddThreePoints()">+3</button>
               </div>
            </div>
+           
         </div>
+        <button id="reset1" onclick="reset1()">Reset</button>
         <div id="div2">
      <div id="para-div"> <p id="pra">Time: <span id="time-el">00:00</span></p></div>
 <button id="start-btn" onclick="start()">Start</button>
@@ -78,7 +80,7 @@
             guestCount=guestCount+3
             guestPts.innerText=guestCount
         }
-        function reset(){
+        function reset1(){
             homeCount = 0 
             guestCount = 0
             homePts.innerText=homeCount
